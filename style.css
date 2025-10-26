@@ -1,0 +1,108 @@
+/*El bossy el fondo de todo la caja principal*/
+body {
+  padding: 0px;
+  margin:0 auto;    
+  background-color: #749b7567;
+}
+
+/*La cabeza principal donde se encuentra el navegador y el menú que tiene una lista*/
+#tituloA{
+    width: 100%;
+    background-color: rgb(1, 68, 1);
+    padding: 10px; 
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    background-color: green;
+    padding: 10px; 
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 8px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s; /*Una pequeña transicion para que se vea dinamica la lista del menu*/
+}
+
+nav ul li a:hover{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    color: yellow;
+}
+
+#cajaizq {
+    float: left;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(96, 226, 96);
+    color: white;
+    text-align: left;          
+    padding: 20px 30px 0 30px; 
+}
+
+#cajaizq img{
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 3px;
+    display: block; 
+    margin: 0 auto;
+}
+
+#explicacion{
+    width: 900px;
+    position: absolute;
+    height: 150px;
+    color: rgb(0, 0, 0);
+    text-align: left;          
+    padding: 20px 0px 0 30px; 
+    margin: 0px 0px 0px 450px;
+}
+
+#formulario {
+    width: 400px;
+    margin: 250px auto;
+    padding: 20px;
+    background-color: #dff0d8;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+#formulario p {
+    margin-bottom: 15px;
+}
+
+#formulario label {
+    color: #2e7d32;
+}
+
+#formulario input[type="text"]{
+    width: 90%;
+    padding: 8px 20px 8px 20px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    color: blue;
+}
+
+#formulario button{
+    width: 400px;
+}
