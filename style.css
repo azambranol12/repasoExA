@@ -7,65 +7,71 @@ body {
 
 /*La cabeza principal donde se encuentra el navegador y el menú que tiene una lista*/
 #tituloA{
-    width: 100%;
+    width:100%;
+    box-sizing: border-box;
+
     background-color: rgb(1, 68, 1);
-    padding: 10px; 
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+    padding: 0.7326007326007326%; 
+    box-shadow: 0.14652014652014652014652014652015% 0.14652014652014652014652014652015% 0.14652014652014652014652014652015% rgb(0, 0, 0, 0.3); /* 2px * 100 / 1365px*/
     color: white;
     text-align: center;
 }
 
 header{
     width: 100%;
+    box-sizing: border-box;
     background-color: green;
-    padding: 10px; 
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+    padding: 0.7326007326007326%;   
+    box-shadow: 0.14652014652014652014652014652015% 0.14652014652014652014652014652015% 0.14652014652014652014652014652015% rgb(0, 0, 0, 0.3); /* 2px * 100 / 1365px*/
 }
 
 nav{
+    width: 98.534798534798534798534798534799%; /* 1345 *100 / 1365*/
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;  
-}
+    gap: 1.465201465201465%;/* 20 *100 / 1365*/
+}   
 
-nav ul li{
-    display: inline-block;
-    padding: 8px;
-}
 
-nav ul li a{
+nav a{
     text-decoration: none;
-    padding: 15px;
+    padding: 1.1320754716981132075471698113208%; /* 15 *100 / 1365 **/
     color: white;
     font-weight: bold;
     transition: background 0.3s, color 0.3s; /*Una pequeña transicion para que se vea dinamica la lista del menu*/
 }
 
-nav ul li a:hover{
+nav a:hover{
     background-color: rgba(255,255,255,0.2);
     border-radius: 4px;
     color: yellow;
 }
 
+#cajaPrincipal{
+    width: 100%;
+    position: relative;
+    height: 749px;
+}
+
 #cajaizq {
     float: left;
-    width: 330px;
+    width: 19.78021978021978%; /* 430 *100 / 1365 */
     background: linear-gradient(180deg, #7be27b, #3ea93e);
     color: #ffffff;
     text-align: left;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.8315018315018315018315018315018% 2.1978021978021978021978021978022%; /* 25 *100 / 1365 //// 30 * 100 / 1365 */
+    border-radius: 0.87912087912087912087912087912088%; /* 12 * 100 / 1365*/
+    box-shadow: 0 0.29304029304029304029304029304029% 0.87912087912087912087912087912088%  rgba(0, 0, 0, 0.2); /* 4 *100 / 1365 //// 12 * 100 / 1365 */
     font-family: 'Segoe UI', Arial, sans-serif;
     position: relative;
     height: 650px;
 }
 #cajaizq img{
-    width: 300px;
-    height: 200px;
+    width: 74.074%; /* 200 * 100 / 270 */
+    height: 150px;
     margin: 0 auto;
-    border-radius: 3px;
+    border-radius: 1.111%; /* 3 * 100 / 270 */
     display: block; 
     margin: 0 auto;
 }
@@ -73,58 +79,52 @@ nav ul li a:hover{
 #cajaizq p {
     position: absolute;
     bottom: 0px; /* lo deja pegado al borde inferior */
-    left: 30px;
+    left: 11.11%; /* 30 * 100 / 270 */
 }
 
-/*#explicacion{
-    width: 900px;
-    position: absolute;
-    height: 150px;
-    color: rgb(0, 0, 0);
-    text-align: left;          
-    padding: 20px 0px 0 30px; 
-    margin: 0px 0px 0px 450px;
-}*/
-
 #formulario {
-    width: 450px;
-    margin: 30px auto;
-    padding: 25px 30px;
+    width: 21.260073260073260073260073260073%; /* 290 * 100% / 1365px*/
+    margin-top: 5.8608058608058608058608058608059%; /* 80px * 100% / 1365px*/
+    padding: 1.8315018315018315018315018315018% 2.1978021978021978021978021978022%;/* 25px y 30px * 100% / 1365px*/
+    position: relative;
     background-color: #e8f5e9;
     border: 2px solid #4caf50;
     border-radius: 12px;
     font-family: 'Segoe UI', Arial, sans-serif;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    left: 300px;
 }
 
 #formulario h1{
     text-align: center;
     color: #2e7d32;
-    margin-bottom: 10px;
+    margin-bottom: 3.448275862068965517241379310345%; /* 10 * 100 / 290 */
 }
 
 #formulario h4{
     text-align: justify;
     color: #33691e;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 6.89655172413793103448275862069%; /* 20 * 100 / 290 */
 }
 
+
 #formulario fieldset{
-    border: 1px solid #81c784;
-    border-radius: 8px;
-    padding: 15px 20px;
+    border: 0.34482758620689655172413793103448% solid #81c784; /* 1 * 100 / 290 */
+    border-radius: 2.758620689655172413793103448276%; /* 8 * 100 / 290 */
+    padding: 5.172413793103448275862068965517% 6.89655172413793103448275862069%; /* 15 * 100 / 290  y  20 * 100 / 290 */
     background-color: #f1f8e9;
 }
 
 #formulario legend {
     color: #2e7d32;
     font-weight: bold;
-    padding: 0 5px;
+    padding: 0 1.7241379310344827586206896551724%; /* 5 * 100 / 290 */
 }
 
 #formulario p {
-    margin-bottom: 15px;
+    margin-bottom: 6.1983471074380165289256198347107%; /* 15 * 100 / 242 */
 }
 
 #formulario label {
@@ -132,13 +132,14 @@ nav ul li a:hover{
 }
 
 #formulario input[type="text"]{
-    width: 90%;
-    padding: 8px 20px 8px 20px;
-    border: 1px solid #4caf50;
-    border-radius: 5px;
+    width: 90%; /* se mantiene igual */
+    padding: 3.305785123966942148760330578512% 8.264462809917355371900826446281% 3.305785123966942148760330578512% 8.264462809917355371900826446281%; /* 8 * 100 / 242 y 20 * 100 / 242 */
+    border: 0.41322314049586776859504132231405% solid #4caf50; /* 1 * 100 / 242 */
+    border-radius: 2.0661157024793388429752066115702%; /* 5 * 100 / 242 */
     color: blue;
 }
 
+
 #fallo{
-    width: 400px;
+    width: 100%;
 }
