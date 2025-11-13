@@ -3,18 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #749b7567;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  box-sizing: border-box;
 }
 
 /* ================= TITULO ================= */
 #tituloA {
   width: 100%;
   background-color: rgb(1, 68, 1);
-  /* padding: 10px → (10 * 100) / 1080 = 0.926vh */
-  padding: 0.926vh;
-  /* sombra vertical: 2px → (2 * 100) / 1080 = 0.185vh */
-  box-shadow: 0 0.185vh 1vh rgba(0, 0, 0, 0.3);
+  padding: 0.926vh; /* 10px × 100 / 1080 = 0.926vh */
+  box-shadow: 0 0.185vh 1vh rgba(0, 0, 0, 0.3); /* 2px × 100 / 1080 = 0.185vh */
   color: white;
   text-align: center;
 }
@@ -22,15 +18,14 @@ body {
 header {
   width: 100%;
   background-color: green;
-  /* padding: 10px → 0.926vh */
-  padding: 0.926vh 0;
-  box-shadow: 0 0.185vh 1vh rgba(0, 0, 0, 0.3);
+  padding: 0.926vh 0; /* 10px × 100 / 1080 = 0.926vh */
+  box-shadow: 0 0.185vh 1vh rgba(0, 0, 0, 0.3); /* 2px × 100 / 1080 = 0.185vh */
 }
 
 /* ================= NAV ================= */
 nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Para que se vea bien*/
   justify-content: center;
   align-items: center;
   gap: 1.5%;
@@ -40,12 +35,10 @@ nav {
 
 nav a {
   text-decoration: none;
-  /* padding vertical: 15px → 1.389vh | horizontal: 15px → 1.099% */
-  padding: 1.389vh 1.099%;
+  padding: 1.389vh 1.099%; /* 15px × 100 / 1080 = 1.389vh | 15px × 100 / 1365 = 1.099% */
   color: white;
   font-weight: bold;
-  /* border-radius: 4px → 0.370vh */
-  border-radius: 0.370vh;
+  border-radius: 0.370vh; /* 4px × 100 / 1080 = 0.370vh */
   transition: background 0.3s, color 0.3s;
 }
 
@@ -61,42 +54,32 @@ nav a:hover {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  /* altura original: 749px → 69.352vh */
-  min-height: 69.352vh;
-  /* padding: 20px → 1.852vh */
-  padding: 1.852vh 0;
+  min-height: 69.352vh; /* 749px × 100 / 1080 = 69.352vh */
+  padding: 1.852vh 0; /* 20px × 100 / 1080 = 1.852vh */
   gap: 3%;
   box-sizing: border-box;
 }
 
 /* ================= CAJA IZQUIERDA (ASIDE) ================= */
 #cajaizq {
-  /* ancho: 430px → 31.502% */
-  flex: 0 0 31.502%;
+  flex: 0 0 31.502%; /* 430px × 100 / 1365 = 31.502% */
   width: 31.502%;
   background: linear-gradient(180deg, #7be27b, #3ea93e);
   color: #ffffff;
-  /* padding vertical: 25px → 2.315vh | horizontal: 30px → 2.198% */
-  padding: 2.315vh 2.198%;
-  /* border-radius: 12px → 1.111vh */
-  border-radius: 1.111vh;
-  /* sombra: 4px → 0.370vh | blur: 12px → 1.111vh */
-  box-shadow: 0 0.370vh 1.111vh rgba(0, 0, 0, 0.2);
+  padding: 2.315vh 2.198%; /* 25px × 100 / 1080 = 2.315vh | 30px × 100 / 1365 = 2.198% */
+  border-radius: 1.111vh; /* 12px × 100 / 1080 = 1.111vh */
+  box-shadow: 0 0.370vh 1.111vh rgba(0, 0, 0, 0.2); /* 4px × 100 / 1080 = 0.370vh | 12px × 100 / 1080 = 1.111vh */
   text-align: left;
-  /* altura: 650px → 60.185vh */
-  min-height: 60.185vh;
+  min-height: 60.185vh; /* 650px × 100 / 1080 = 60.185vh */
   box-sizing: border-box;
 }
 
 #cajaizq img {
-  /* ancho: 200/270 = 74.074% */
-  width: 74.074%;
+  width: 74.074%; /* 200px × 100 / 270 = 74.074% */
   height: auto;
-  /* altura máxima: 150px → 13.889vh */
-  max-height: 13.889vh;
-  margin: 0 auto 2vh auto;
-  /* border-radius: 3px → 1.111% (referencia 270px) */
-  border-radius: 1.111%;
+  max-height: 13.889vh; /* 150px × 100 / 1080 = 13.889vh */
+  margin: 0 auto 1.852vh auto; /* 20px × 100 / 1080 = 1.852vh */
+  border-radius: 1.111%; /* 3px × 100 / 270 = 1.111% */
   display: block;
 }
 
@@ -106,76 +89,60 @@ nav a:hover {
 }
 
 #cajaizq p {
-  /* margen-top: 20px → 1.852vh */
-  margin-top: 1.852vh;
+  margin-top: 1.852vh; /* 20px × 100 / 1080 = 1.852vh */
 }
 
 /* ================= FORMULARIO ================= */
 #formulario {
   flex: 1;
-  /* padding vertical: 30px → 2.778vh | horizontal: 30px → 2.198% */
-  padding: 2.778vh 2.198%;
+  padding: 2.778vh 2.198%; /* 30px × 100 / 1080 = 2.778vh | 30px × 100 / 1365 = 2.198% */
   background-color: #e8f5e9;
-  /* borde: 2px → 0.185vh */
-  border: 0.185vh solid #4caf50;
-  /* border-radius: 12px → 1.111vh */
-  border-radius: 1.111vh;
-  box-shadow: 0 0.370vh 1.111vh rgba(0, 0, 0, 0.1);
-  /* altura mínima: 650px → 60.185vh */
-  min-height: 60.185vh;
+  border: 0.185vh solid #4caf50; /* 2px × 100 / 1080 = 0.185vh */
+  border-radius: 1.111vh; /* 12px × 100 / 1080 = 1.111vh */
+  box-shadow: 0 0.370vh 1.111vh rgba(0, 0, 0, 0.1); /* 4px × 100 / 1080 = 0.370vh | 12px × 100 / 1080 = 1.111vh */
+  min-height: 60.185vh; /* 650px × 100 / 1080 = 60.185vh */
   box-sizing: border-box;
 }
 
 #formulario h1 {
   text-align: center;
   color: #2e7d32;
-  /* margin-bottom: 10px → 0.926vh */
-  margin-bottom: 0.926vh;
+  margin-bottom: 0.926vh; /* 10px × 100 / 1080 = 0.926vh */
 }
 
 #formulario h4 {
   text-align: justify;
   color: #33691e;
   font-weight: normal;
-  /* margin-bottom: 20px → 1.852vh */
-  margin-bottom: 1.852vh;
+  margin-bottom: 1.852vh; /* 20px × 100 / 1080 = 1.852vh */
 }
 
 #formulario fieldset {
-  /* borde: 1px → 0.093vh (usamos 0.185vh para visibilidad) */
-  border: 0.185vh solid #81c784;
-  /* border-radius: 8px → 0.741vh */
-  border-radius: 0.741vh;
-  /* padding vertical: 15px → 1.389vh | horizontal: 20px → 1.465% */
-  padding: 1.389vh 1.465%;
+  border: 0.185vh solid #81c784; /* 2px × 100 / 1080 = 0.185vh */
+  border-radius: 0.741vh; /* 8px × 100 / 1080 = 0.741vh */
+  padding: 1.389vh 1.465%; /* 15px × 100 / 1080 = 1.389vh | 20px × 100 / 1365 = 1.465% */
   background-color: #f1f8e9;
 }
 
 #formulario legend {
   color: #2e7d32;
   font-weight: bold;
-  /* padding horizontal: 5px → 0.366% */
-  padding: 0 0.366%;
+  padding: 0 0.366%; /* 5px × 100 / 1365 = 0.366% */
 }
 
 #formulario label {
   display: block;
-  /* margin-top: 15px → 1.389vh */
-  margin-top: 1.389vh;
+  margin-top: 1.389vh; /* 15px × 100 / 1080 = 1.389vh */
   color: #2e7d32;
 }
 
 #formulario input[type="text"],
 #formulario select {
   width: 100%;
-  /* padding vertical: 8px → 0.741vh | horizontal: 20px → 1.465% */
-  padding: 0.741vh 1.465%;
-  /* margin-top: 5px → 0.463vh */
-  margin-top: 0.463vh;
-  /* borde: 1px → 0.093vh (redondeado a 0.185vh) */
-  border: 0.185vh solid #4caf50;
-  /* border-radius: 5px → 0.463vh */
-  border-radius: 0.463vh;
+  padding: 0.741vh 1.465%; /* 8px × 100 / 1080 = 0.741vh | 20px × 100 / 1365 = 1.465% */
+  margin-top: 0.463vh; /* 5px × 100 / 1080 = 0.463vh */
+  border: 0.185vh solid #4caf50; /* 2px × 100 / 1080 = 0.185vh */
+  border-radius: 0.463vh; /* 5px × 100 / 1080 = 0.463vh */
   font-size: 1em;
   color: #333;
   box-sizing: border-box;
@@ -184,15 +151,12 @@ nav a:hover {
 /* ================= BOTÓN ================= */
 #fallo {
   width: 100%;
-  /* margin-top: 20px → 1.852vh */
-  margin-top: 1.852vh;
-  /* padding: 10px → 0.926vh */
-  padding: 0.926vh;
+  margin-top: 1.852vh; /* 20px × 100 / 1080 = 1.852vh */
+  padding: 0.926vh; /* 10px × 100 / 1080 = 0.926vh */
   background-color: #4caf50;
   color: white;
   border: none;
-  /* border-radius: 5px → 0.463vh */
-  border-radius: 0.463vh;
+  border-radius: 0.463vh; /* 5px × 100 / 1080 = 0.463vh */
   cursor: pointer;
   font-size: 1em;
 }
